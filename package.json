@@ -1,0 +1,28 @@
+{
+  "name": "turtle-craft",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.14.1",
+    "@types/ws": "^8.18.1",
+    "ngrok": "^5.0.0-beta.2",
+    "patch-package": "^8.0.0",
+    "ts": "^0.2.2",
+    "ws": "^8.18.1"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "postinstall": "patch-package",
+    "dev": "tsc && node lib/index.js",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

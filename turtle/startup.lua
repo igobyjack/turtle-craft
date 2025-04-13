@@ -1,0 +1,1 @@
+--                  This is the script that must be inputted into the Turtle to establish the connection to the WebSocket                    --
