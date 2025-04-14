@@ -2,7 +2,7 @@
 
 local socket = "ws://localhost:5757"
 
-local ws, err = http.websocket(socket)
+ws, err = http.websocket(socket)
 
 if ws then
     print('connection estasblished')
