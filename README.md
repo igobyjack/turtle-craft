@@ -3,3 +3,7 @@ Turtles will communicate to my (alockinalock) localhost on port 5757 through ngr
 
 # THE FRONTEND
 The front end folder will stage our react components, hosted on nextjs & Vercel
+
+# HOW TO
+The project uses yarn for packages. Use yarn install to install packages.
+Use npm run build to compile the project.
