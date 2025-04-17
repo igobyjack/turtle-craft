@@ -14,7 +14,7 @@ end
 
 local function listenForMessages()
     while true do
-        
+        print("Waiting for message...")
         local message = ws.receive()
         
         if message then
@@ -67,9 +67,9 @@ local function dataBack()
         }
 
         local jsonData = textutils.serializeJSON(inspectData)
-
+        print("sending data")
         ws.send(jsonData)
-        sleep(1) -- 1 second delay between data updates
+        sleep(3) -- 1 second delay between data updates
 
     end
 
