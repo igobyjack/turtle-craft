@@ -1,7 +1,7 @@
 --                  This is the script that must be inputted into the Turtle to establish the connection to the WebSocket                    --
 
 -- NGROK url --
-local ws, err = http.websocket("wss//:<NGROK_URL>")
+local ws, err = http.websocket("wss://<NGROK_URL>")
 
 -- planned JSON format: 
 
