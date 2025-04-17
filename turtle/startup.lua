@@ -25,6 +25,14 @@ if ws then
                             turtle.back()
                         elseif obj.command == "dig" then
                             turtle.dig()
+                        elseif obj.command == "down" then
+                            turtle.down()
+                        elseif obj.command == "up" then
+                            turtle.up()
+                        elseif obj.command == "turnLeft" then
+                            turtle.turnLeft()
+                        elseif obj.command == "turnRight" then
+                            turtle.turnRight()
                         else
                             print("Unknown command: " .. tostring(obj.command))
                         end
